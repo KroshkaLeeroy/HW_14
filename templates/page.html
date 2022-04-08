@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+</head>
+<body>
+{% for request in requests %}
+        <div>
+            <p>Название: {{request.title}}</p>
+            <p>Год выпуска: {{request.release_year}}</p>
+            <hr>
+        </div>
+{% endfor %}
+
+</body>
+</html>
